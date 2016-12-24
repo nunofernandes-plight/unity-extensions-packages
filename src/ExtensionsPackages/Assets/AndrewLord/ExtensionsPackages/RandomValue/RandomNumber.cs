@@ -3,19 +3,18 @@ namespace AndrewLord.ExtensionsPackages.UnityRandomValue {
   using System;
 
   /// <summary>
-  /// Generate a random number between a specified minimum and maximum, without needing to specify these limits each 
-  /// time. Creators of this class can define a default minimum and maximum, so that these don't always need to be 
+  /// Generate a random number between a specified minimum and maximum, without needing to specify these limits each
+  /// time. Creators of this class can define a default minimum and maximum, so that these don't always need to be
   /// specified.
   /// </summary>
   public abstract class RandomNumber<TValue> {
 
     protected TValue minimum;
     protected TValue maximum;
-
-    private Random generator;
+    protected Random generator;
 
     /// <summary>
-    /// Create a random number generator using the specified Random class. By passing this in it allows you to 
+    /// Create a random number generator using the specified Random class. By passing this in it allows you to
     /// customise how your numbers are generated.
     /// </summary>
     /// <param name="generator">A random number generator.</param>
