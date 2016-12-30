@@ -1,4 +1,4 @@
-namespace AndrewLord.UnityPausableRigidBody2D {
+namespace AndrewLord.ExtensionsPackages.UnityPausableRigidBody2D {
 
   using UnityEngine;
 
