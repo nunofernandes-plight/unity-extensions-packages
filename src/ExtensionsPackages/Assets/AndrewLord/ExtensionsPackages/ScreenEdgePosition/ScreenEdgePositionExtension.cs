@@ -6,7 +6,7 @@ namespace AndrewLord.ExtensionsPackages.UnityScreenEdgePosition {
     Left, Right, Top, Bottom
   };
 
-  public static class PositionExtension {
+  public static class ScreenEdgePositionExtension {
 
     public static Transform SetX(this Transform transform, float x) {
       Vector3 position = transform.position;
