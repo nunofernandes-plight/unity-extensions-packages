@@ -21,6 +21,8 @@ namespace AndrewLord.ExtensionsPackages.UnityPausableRigidBody2D {
     public void Pause() {
       savedVelocity = body.velocity;
       savedAngularVelocity = body.angularVelocity;
+      body.velocity = Vector3.zero;
+      body.angularVelocity = 0f;
       body.isKinematic = true;
     }
 
